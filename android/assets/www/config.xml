@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns       = "http://www.w3.org/ns/widgets"
+        xmlns:gap   = "http://phonegap.com/ns/1.0"
+        xmlns:rim   ="http://www.blackberry.com/ns/widgets"
+
+        id          = "com.phonegap.gpsstrike"
+        version     = "1.0"
+        width       = "320"
+        height      = "480"
+        viewmodes   = "fullscreen">
+
+  <name short="gpsstrike">GPS Strike Massive Online Shooter</name>
+  <description>Great Real World Realtime Battles. Massive Multiplayer Online Shooter with GPS Location based gameplay</description>
+
+  <author href  = "http://slach.livejournal.com/"
+          email = "bloodjazman@gmail.com">Slach</author>
+
+
+  <gap:platforms>
+    <gap:platform name="android" minVersion="2.2"/>
+    <gap:platform name="ios" minVersion="4.1"/>
+    <gap:platform name="blackberry" project="widgets"/>
+  </gap:platforms>
+
+<!-- PhoneGap BlackBerry API -->
+  <rim:feature id="com.phonegap" required="true" version="1.4.1" />
+
+  <!-- BlackBerry API -->
+  <rim:feature id="blackberry.system" required="true" version="1.0.0.0" />
+  <rim:feature id="blackberry.find" required="true" version="1.0.0.0" />
+  <rim:feature id="blackberry.identity" required="true" version="1.0.0.0" />
+  <rim:feature id="blackberry.pim.Address" required="true" version="1.0.0.0" />
+  <rim:feature id="blackberry.pim.Contact" required="true" version="1.0.0.0" />
+  <rim:feature id="blackberry.io.file" required="true" version="1.0.0.0" />
+  <rim:feature id="blackberry.utils" required="true" version="1.0.0.0" />
+  <rim:feature id="blackberry.io.dir" required="true" version="1.0.0.0" />
+  <rim:feature id="blackberry.app" required="true" version="1.0.0.0" />
+  <rim:feature id="blackberry.app.event" required="true" version="1.0.0.0" />
+  <rim:feature id="blackberry.system.event" required="true" version="1.0.0.0"/>
+
+<rim:feature id="blackberry.widgetcache" required="true" version="1.0.0.0"/>
+  <rim:feature id="blackberry.media.camera" />
+  <rim:feature id="blackberry.ui.dialog" />
+
+  <!-- BlackBerry  API -->
+  <access subdomains="true" uri="file:///store/home" />
+  <access subdomains="true" uri="file:///SDCard" />
+
+  <!-- Expose access to all URIs, including the file and http protocols -->
+  <access subdomains="true" uri="*" />
+
+<icon src="i/gpsstrike_48x48.png"/>
+  <icon rim:hover="false" src="i/gpsstrike_48x48.png" />
+  <icon rim:hover="true" src="i/gpsstrike_48x48.png" />
+
+  <rim:loadingScreen backgroundColor="#000000"
+                     foregroundImage="i/loading.png"
+         onFirstLaunch="true">
+    <rim:transitionEffect type="fadeOut" />
+  </rim:loadingScreen>
+  <gap:splash  src="i/loading.png"  />
+
+  <content src="index.html" />
+
+<rim:permissions>
+    <rim:permit>use_camera</rim:permit>
+    <rim:permit>read_device_identifying_information</rim:permit>
+    <rim:permit>access_shared</rim:permit>
+    <rim:permit>read_geolocation</rim:permit>
+</rim:permissions>
+
+
+  <license></license>
+</widget>

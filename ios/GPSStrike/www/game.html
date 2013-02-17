@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <title>GPS Strike</title>
+
+    <link rel="stylesheet" href="js/ui/zeptoui-0.2.1.min.css" type="text/css" media="screen" title="no title">
+    <link rel="stylesheet" href="js/ui/zeptoui-slider.css" type="text/css" media="screen" title="no title">
+    <link rel="stylesheet" href="css/leaflet.css" type="text/css" media="screen" title="no title">
+    <link rel="stylesheet" href="css/main.css" type="text/css" media="screen" title="no title">
+
+
+    <script type="text/javascript" charset="utf-8" src="js/net/json2.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/net/sockjs.js"></script>
+
+    <script type="text/javascript" charset="utf-8" src="js/ui/zepto.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/ui/leaflet.js"></script>
+
+		<script src="js/crypto/crypto.js" type="text/javascript" ></script>
+		<script src="js/crypto/cryptomath.js" type="text/javascript" ></script>
+		<script src="js/crypto/sha1.js" type="text/javascript" ></script>
+
+
+
+<script src="cordova-1.5.0.js" type="text/javascript"></script>
+
+
+  </head>
+  <body onload="init();">
+		<article id="game" data-role="page">
+			<header>
+			</header>
+	    <div data-role="content">
+	      <img id="DisconnectIcon" src="i/disconnect.png" style="position:absolute;top:10px;right:10px;display:none;" alt="Disconnect">
+		    <div data-role="panel" id="map" class="map">Game map...</div>
+		  </div>
+    	<footer data-role="footer" data-theme="a" id="footer">
+
+	    	<div id="slider_bar" data-role="page-title" class="slider" style="display:none">
+					<div class="track"></div>
+					<div class="knob" role="slider"></div>
+	    	</div>
+
+	    	<h1 id="status_bar" data-role="page-title" style="display:none">Status bar</h1>
+
+        <ul id="next_nav" data-role="navigation" data-theme="a" style="display:none">
+            <li><a id="NextBtn" data-ajax="false" data-role="button">Next...</a></li>
+        </ul>
+
+        <ul id="done_nav" data-role="navigation" data-theme="a" style="display:none">
+            <li><a id="DoneBtn" data-ajax="false" data-role="button">Done</a></li>
+        </ul>
+
+        <ul id="confirm_nav" data-role="navigation" data-theme="a" style="display:none">
+            <li><a id="ConfirmBtn" data-ajax="false" data-role="button">Ok</a></li>
+            <li><a id="CancelBtn" data-ajax="false" data-role="button">Cancel</a></li>
+        </ul>
+
+        <ul id="toolbar_nav" data-role="navigation" data-theme="a" style="display:block">
+            <li><a id="HomeBtn" data-ajax="false" data-role="button">Home</a></li>
+            <li><a id="EAttackBtn" data-ajax="false" data-role="button">E Attack</a></li>
+            <li><a id="MAttackBtn" data-ajax="false" data-role="button">M Attack</a></li>
+        </ul>
+  		</footer>
+		</article>
+
+    <script type="text/javascript" charset="utf-8" src="js/ui/zeptoui-0.2.1.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/ui/zeptoui-slider.js"></script>
+
+    <script type="text/javascript" charset="utf-8" src="js/config.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/map.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/net.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/game.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/game_ui.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/main.js"></script>
+
+  </body>
+</html>

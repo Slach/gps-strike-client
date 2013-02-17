@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+
+    <title>GPS Strike</title>
+
+    <script type="text/javascript" charset="utf-8" src="js/ui/json2.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/ui/zepto.js"></script>
+
+    <link rel="stylesheet" href="js/ui/zeptoui-0.2.1.min.css" type="text/css" media="screen" title="no title">
+
+<!-- ## <script src="cordova.js" type="text/javascript"></script> ## -->
+
+
+  </head>
+  <body>
+		<article id="index" data-role="page">
+	    <header data-role="header" data-theme="a">
+	    	<h1 data-role="page-title">GPS Strike</h1>
+	    </header>
+	    <div data-role="content">
+	    	<form action="game.html" id="login_form" data-ajax="false" method="POST">
+
+        <div data-role="panel" data-theme="a">
+          <ol>
+            <li data-role=field>
+              <label>Player Nickname:
+                <input type="text" id="login" name="login" placeholder="unique player name">
+              </label>
+            </li>
+            <li data-role=field>
+              <label>Game password:
+                <input type="text" id="password" name="password" placeholder="may be empty">
+              </label>
+            </li>
+            <li data-role=field>
+              <label>Server:
+                <input type="text" id="server" name="server" placeholder="address:port">
+              </label>
+            </li>
+          </ol>
+        	<input data-role="button" data-theme="b" style="width:100%" type="submit" value="Start game...">
+	    	</div>
+
+	    	</form>
+	    </div>
+    	<footer data-role="footer">
+        <ul data-role="navigation">
+    			<li><a href="http://m.gps-strike.com/" data-role="button" rel="external">More about game</a></li>
+        </ul>
+		</footer>
+		</article>
+
+    <script type="text/javascript" charset="utf-8" src="js/ui/zeptoui-0.2.1.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/login_form.js"></script>
+  </body>
+</html>
